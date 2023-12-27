@@ -29,6 +29,9 @@ class Profile(models.Model):
         blank=False,
     )
 
+    def __str__(self):
+        return f'{self.first_name} {self.last_name}'
+
 
 PLANTS_CHOICES = (
     ("outdoor", "Outdoor Plants"),
@@ -65,3 +68,6 @@ class Plant(models.Model):
         null=False,
         blank=False,
     )
+
+    def __str__(self):
+        return f'Name: {self.name} Type: {self.type} Price: {self.price}'
