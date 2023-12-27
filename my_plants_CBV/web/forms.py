@@ -8,3 +8,10 @@ class CreateProfileForm(forms.ModelForm):
         model = Profile
         fields = "__all__"
         labels = {"first_name": "First Name", "last_name": "Last Name"}
+
+
+class DeleteProfileForm(forms.ModelForm):
+    class Meta:
+        model = Profile
+        fields = "__all__"
+        labels = {"first_name": "First Name", "last_name": "Last Name"}

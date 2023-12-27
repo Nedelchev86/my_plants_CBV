@@ -15,7 +15,7 @@
         <!-- Navigation Bar -->
         <h1><a class="index-navigation" href="{% url 'home page' %}">MyPlants</a></h1>
         <nav>
-            {% if not no_profile %}
+            {% if not have_profile %}
                 <a href="{% url 'catalogue' %}">Catalogue</a>
                 <a href="{% url 'plant_create' %}">Create Plant</a>
                 <a href="{% url 'profile_details' %}">Profile</a>

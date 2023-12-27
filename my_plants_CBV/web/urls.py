@@ -3,6 +3,7 @@ from django.urls import path, include
 from my_plants_CBV.web.views import Index, ProfileCreate, ProfileDetails, ProfileEdit, ProfileDelete, Catalogue, \
     PlantCreate, PlantDetails, PlantEdit, DeleteEdit
 
+
 urlpatterns = [
     path('', Index.as_view(), name='home page'),
     path('catalogue/', Catalogue.as_view(), name='catalogue'),
