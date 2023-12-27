@@ -57,6 +57,7 @@ class Plant(models.Model):
     image_url = models.URLField(
         null=False,
         blank=False,
+        verbose_name="Image URL"
     )
 
     description = models.TextField(
